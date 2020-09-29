@@ -1,0 +1,23 @@
+{
+  "name": "elc-ovo",
+  "version": "1.0.0",
+  "description": "ELC OVO is a web platform to spread awareness for the effort to fight Breast Cancer. Using Deep Learning, Gaming, and Social Media we aggregate and spread information for Estee Lauder's Breast Cancer Campaign and crowd source donations",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/coderrick/elc-ovo.git"
+  },
+  "author": "team OVO",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/coderrick/elc-ovo/issues"
+  },
+  "homepage": "https://github.com/coderrick/elc-ovo#readme",
+  "dependencies": {
+    "express": "^4.17.1"
+  }
+}
