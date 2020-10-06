@@ -189,7 +189,6 @@ public class dataCollector : MonoBehaviour {
     const int dataMaxSize = 1000;
     const float maxExplorableDistance = 500;
     public Data data;
-<<<<<<< HEAD
     public dataDrawer dW;
 
     public int ticket = 0;
@@ -233,51 +232,6 @@ public class dataCollector : MonoBehaviour {
     public void addDataToTheMatrix(Vector3 v, byte b) { data.setValue(v, b); }
     
     /// <summary>
-=======
-    public dataDrawer dW;
-
-    public int ticket = 0;
-    public indx[] dronesPositions;
-    bool initialized = false;
-    /// <summary>
-    /// Each drone has to call this function to obtain a ticket used for updating their position in the drawer
-    /// <para>The first drone that calls this function determine the zeroPointPosition</para>
-    /// </summary>
-    /// <param name="dronePosition">The actual position of the drone</param>
-    /// <returns>Returns a ticket that will be used for updating the position</returns>
-    public int initialize(Vector3 dronePosition)
-    {
-        if (!initialized)
-        {
-            // the first drone that register itself determine the zeroPointPosition, that correspond to the center of the map
-            dronesPositions = new indx[10]; 
-            indx actualPosition = new indx(dataMaxSize / 2, dataMaxSize / 2);
-            data = new Data(dataMaxSize, maxExplorableDistance, dronePosition, actualPosition);
-            dW.setData(data);
-            initialized = true;
-        }
-        
-        // other drones just takes a ticket to actualize their position 
-        dronesPositions[ticket] = new indx(dronePosition);
-        return ticket++;
-    }
-
-    /// <summary>
-    /// Using the ticket obtained with the initialization, the drone can update its position
-    /// </summary>
-    /// <param name="ticket">Ticket obtained with the initialization</param>
-    /// <param name="pos">The actual position of the drone</param>
-    public void updatePosition (int ticket, Vector3 pos) { dronesPositions[ticket] = data.v3ToIndx(pos); }
-
-    /// <summary>
-    /// Adds data to the matrix
-    /// </summary>
-    /// <param name="v">Position of the data we want to add</param>
-    /// <param name="b">Value registered from sensors that indicates if there is a wall or it is empty space</param>
-    public void addDataToTheMatrix(Vector3 v, byte b) { data.setValue(v, b); }
-    
-    /// <summary>
->>>>>>> master
     /// If the Indxs created with the Vectors passed are equals returns true, false otherwise.
     /// </summary>
     public bool sameIndx(Vector3 v1, Vector3 v2) { return indx.Equals(data.v3ToIndx(v1), data.v3ToIndx(v2)); }
