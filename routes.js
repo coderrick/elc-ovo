@@ -26,6 +26,10 @@ module.exports = function (app) {
 
     app.get('/sharestory', function (req, res) {
         res.render(__dirname + '/static/story')
+    })
+
+    app.get('/game', function (req, res) {
+        res.render(__dirname + '/static/ovochallenge')
     });
 
     app.get('/cookietest', function (req, res) {
