@@ -36,6 +36,10 @@ module.exports = function (app) {
         res.render(__dirname + '/static/ovochallenge')
     });
 
+    app.get('/donate', function (req, res) {
+        res.render(__dirname + '/static/donation/donate')
+    });
+
     app.get('/cookietest', function (req, res) {
         res.cookie('test', 'cookie').send('cookie set');
     })
