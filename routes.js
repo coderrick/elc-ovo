@@ -28,6 +28,10 @@ module.exports = function (app) {
         res.render(__dirname + '/static/story')
     })
 
+    app.get('/donation', function (req, res) {
+        res.render(__dirname + '/static/donate')
+    });
+
     app.get('/game', function (req, res) {
         res.render(__dirname + '/static/ovochallenge')
     });

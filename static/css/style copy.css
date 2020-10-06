@@ -44,3 +44,10 @@ ul {
     -webkit-box-align: center;
     align-items: center;
   }
+
+  .nav{
+    position: absolute;
+    top: 2%;
+    right: 15px;
+    z-index: 3;
+}
