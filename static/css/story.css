@@ -1,0 +1,19 @@
+html{
+    text-align: center;
+}
+
+.nav{
+    position: absolute;
+    top: 2%;
+    right: 15px;
+    z-index: 3;
+}
+.text{
+  background-color: pink;
+  opacity: 0.9;
+  z-index: 2;
+}
+
+.mdl-dialog{
+  width: 40% !important;
+}
