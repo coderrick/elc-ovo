@@ -246,3 +246,10 @@ input[type="search"] {
     display: none;
   }
 }
+
+.nav{
+  position: absolute;
+  top: 2%;
+  right: 15px;
+  z-index: 3;
+}
