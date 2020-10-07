@@ -3,7 +3,7 @@ async function initMap() {
     const pyrmont = await geocodeAddress();
     const map = new google.maps.Map(document.getElementById("map"), {
         center: pyrmont,
-        zoom: 17,
+        zoom: 10,
     });
 
     // Create the places service.
