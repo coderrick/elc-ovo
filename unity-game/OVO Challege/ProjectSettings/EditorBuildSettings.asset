@@ -4,5 +4,8 @@
 EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
-  m_Scenes: []
+  m_Scenes:
+  - enabled: 1
+    path: Assets/2.5_Point_In_Environment.unity
+    guid: d3a796ad44242c840a8606f807e3a85e
   m_configObjects: {}
