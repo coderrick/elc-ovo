@@ -83,7 +83,7 @@ document.getElementById("connect").addEventListener("click", () => {
         welcomeMessage: `${document.getElementById("name").value} has joined the chat.`
       });
       window.talkSession = new Talk.Session({
-        appId: "tFQIy8Y9",
+        appId: "{Talk.JS App ID}",
         me: me
       });
 
